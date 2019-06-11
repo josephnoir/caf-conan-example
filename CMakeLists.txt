@@ -32,6 +32,7 @@ if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
      "${CMAKE_BINARY_DIR}/conan.cmake")
 endif()
 include(${CMAKE_BINARY_DIR}/conan.cmake)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 
 # Add bincrafters as a remote, they host the CAF conan recipe
 conan_add_remote(NAME bincrafters
